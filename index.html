@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Jump</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="start">
+        <section class="section-start">
+            
+            <img src="./imagens/logo.png" class="logo-mario">
+            <h3>Instruções para usuários de PC's</h3>
+            <br>
+            <br>
+            <ul type="square">
+                <li>Pressione "Enter" para iniciar/reiniciar.</li>
+                <li>Pressione "Espaço" para pular.</li>
+                <li>Pressione "P" para pausar/retomar</li>
+            </ul>
+            <br><br>
+            <input type="button" class="btn" value="iniciar" id="iniciarbtn" onclick="iniciar()">
+        </section>
+    </div>
+    <div class="game-board">
+        <section class="scores">
+            <div class="p__score">score:</div>
+            <div id="score">0</div>
+        </section>
+        <img src="./imagens/clouds.png" class="clouds">
+        <img src="./imagens/cloudsslow.png" class="cloudsSlow">
+        <img src="./imagens/mario.gif" class="mario">
+        <img src="./imagens/pipe.png" class="pipe">
+        <img src="./imagens/grass.png" alt="grass" class="grass">
+    </div>
+    <div class="game-over" >
+            <img src="./imagens/gameover.png" class="game-over-img">
+            <!-- <h1>Game Over :</h1> -->
+            <button onclick="restart()">Reiniciar</button>
+        </div>
+</body>
+
+<script src="script.js" ></script>
+
+</html>
